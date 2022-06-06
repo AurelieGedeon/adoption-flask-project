@@ -6,7 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello from Pet Adoption!'
+    return '''
+    <h1> Pet Adoption</h1>
+    <button>Add a Pet</button>
+    '''
 
 
 @app.route('/dogs')

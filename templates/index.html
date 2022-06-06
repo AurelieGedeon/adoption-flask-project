@@ -18,19 +18,19 @@
   </head>
   <body>
     <section class="main-header">
-      <a href="#">
+      <a href="{{ url_for('index') }}">
         <h1 class="header">
           <i class="fas fa-paw"></i>
           Pet Adoption
         </h1>
       </a>
-      <a class="add-pet-btn" href="#" alt="Add Pet">
+      <a class="add-pet-btn" href="{{ url_for('add_pet') }}" alt="Add Pet">
         <i class="fas fa-plus"></i>
         Pet
       </a>
     </section>
     <section id="pet-cards">
-      <a href="#">
+      <a href="{{ url_for('pet') }}">
         <div class="card">
           <img
             src="https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg"
@@ -41,7 +41,7 @@
           <p>This is a great dog. The best dog in all the world.</p>
         </div>
       </a>
-      <a href="#">
+      <a href="{{ url_for('pet') }}">
         <div class="card">
           <img
             src="https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg"
@@ -52,7 +52,7 @@
           <p>This is a great dog. The best dog in all the world.</p>
         </div>
       </a>
-      <a href="#">
+      <a href="{{ url_for('pet') }}">
         <div class="card">
           <img
             src="https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg"
@@ -63,7 +63,7 @@
           <p>This is a great dog. The best dog in all the world.</p>
         </div>
       </a>
-      <a href="#">
+      <a href="{{ url_for('pet') }}">
         <div class="card">
           <img
             src="https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg"
@@ -74,7 +74,7 @@
           <p>This is a great dog. The best dog in all the world.</p>
         </div>
       </a>
-      <a href="#">
+      <a href="{{ url_for('pet') }}">
         <div class="card">
           <img
             src="https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg"

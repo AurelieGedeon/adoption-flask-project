@@ -10,15 +10,15 @@
       src="https://kit.fontawesome.com/75bde6854e.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/static/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="/static/css/styles.css" />
   </head>
   <body>
     <section class="main-header">
-      <a href="#">
+      <a href="{{ url_for('index') }}">
         <h1 class="header">
           <i class="fas fa-paw"></i>
           Pet Adoption

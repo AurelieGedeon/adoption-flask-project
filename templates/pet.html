@@ -18,13 +18,13 @@
   </head>
   <body>
     <section class="main-header">
-      <a href="#">
+      <a href="{{ url_for('index') }}">
         <h1 class="header">
           <i class="fas fa-paw"></i>
           Pet Adoption
         </h1>
       </a>
-      <a class="add-pet-btn" href="#" alt="Add Pet">
+      <a class="add-pet-btn" href="{{ url_for('add_pet') }}" alt="Add Pet">
         <i class="fas fa-plus"></i>
         Pet
       </a>

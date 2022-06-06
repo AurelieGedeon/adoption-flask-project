@@ -1,33 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Pet Adoption</title>
-    <meta name="description" content="A collection of adoptable pets." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+{% extends 'layout.html' %}
 
-    <script
-      src="https://kit.fontawesome.com/75bde6854e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <section class="main-header">
-      <a href="{{ url_for('index') }}">
-        <h1 class="header">
-          <i class="fas fa-paw"></i>
-          Pet Adoption
-        </h1>
-      </a>
-      <a class="back-btn" href="#">
+{% block button %}
+      <a class="back-btn" href="{{ url_for('index') }}">
         <i class="fas fa-caret-left"></i>
         Back
       </a>
+{% endblock %}
+
+{% block content %}
     </section>
     <section id="pet-cards">
       <form action="#">
@@ -168,5 +148,4 @@
       </form>
     </section>
     <script src="/static/js/app.js"></script>
-  </body>
-</html>
+{% endblock %}

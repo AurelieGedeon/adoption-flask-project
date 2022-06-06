@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
@@ -6,10 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '''
-    <h1> Pet Adoption</h1>
-    <button>Add a Pet</button>
-    '''
+    return render_template('index.html')
 
 
 @app.route('/dogs')

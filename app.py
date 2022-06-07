@@ -4,7 +4,8 @@ from models import db, Pet, app
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    pets = Pet.query.all()
+    return render_template('index.html', pets=pets)
 
 
 @app.route('/add-pet', methods=['GET', 'POST'])
